@@ -56,16 +56,41 @@ body{
    margin-right: 2rem;
 }
 
-    display: flex;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    text-align: initial;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 2.5rem;
-    justify-content: space-around;
-
 .card{
     position: relative;
     height: 500px;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
 }
+
+/* animation */
+
+.bounce:hover {
+    animation-name: bounce;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    
+    100% {
+        transform: translateY(-10px) scale(1.05);
+    }
+}
+
+.bounce {
+    animation-name: reverse;
+    animation-duration: 0.2s;
+}
+
+@keyframes reverse {
+    from {
+        transform: translateY(-10px) scale(1.05);
+    }
+    to {
+        transform: translateY(0) scale(1);
+    }
+}
+

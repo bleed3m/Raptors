@@ -1,26 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Montserrat:wght@100&display=swap');
+
 body{
-    background-color:#262626;
+    background-color: #101010;
 }
 
-.menu{
-    background-color: black;
+*{
+    box-sizing: border-box;
+}
 
-    padding: 15px;
-    display: flex;
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 1rem;
-}
-
-.menu a{
-    display: inline-block;
-    color: white;
     text-align: center;
-    font-size: 200%;
-    padding: 10px;
+    padding: 6px;
+    transition: ease-in-out 0.3s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
 }
 
-.search{
-    margin-left: auto;
+header:hover{
+    background-color: black;
+}
+
+header a{
+    color: white;
+    transition: .3s ease-in-out;
+}
+
+.nav_links{
+    list-style: none;
+    cursor: default;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: red;
+}
+
+.navbox{
+    width: 20%;
+    cursor: cursor;
 }
 
 .search-bar{
@@ -50,7 +89,7 @@ body{
    flex-wrap: wrap;
    flex-direction: row;
    justify-content: space-around;
-   margin-top: 2rem;
+   margin-top: 6rem;
    margin-bottom: 2rem;
    margin-left: 2rem;
    margin-right: 2rem;
@@ -62,6 +101,40 @@ body{
     height: 500px;
     animation-duration: 0.2s;
     animation-fill-mode: forwards;
+}
+
+/* player page */
+#player{
+    display: flex;
+    color: white;
+    flex-direction: row;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    padding: 6rem;
+}
+
+.large-card{
+    position: flex;
+    height: 700px;
+}
+
+.player-info{
+    margin-left: 6rem;
+}
+
+.background-logo{
+    position: fixed;    
+    opacity: 10%;
+    height: 50rem;
+    z-index: -1;
+    transform: translate(60rem);
+}
+
+.info{
+    font-size: 30px;
+    text-indent: 0rem;
+    line-height: 150%;
 }
 
 /* animation */
@@ -94,4 +167,3 @@ body{
         transform: translateY(0) scale(1);
     }
 }
-

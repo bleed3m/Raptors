@@ -102,6 +102,8 @@ header a{
     font-size: 20px;
     line-height: 40px;
     color: white;
+    background-color: transparent;
+    padding: 3rem;
 }
 
 /* cards */
@@ -162,7 +164,6 @@ header a{
 }
 
 /* games */
-
 
 /* animation */
 

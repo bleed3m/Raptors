@@ -128,6 +128,23 @@ header a{
     animation-fill-mode: forwards;
 }
 
+/* legacy */
+
+.jersey-container{
+    position: relative;
+    margin-top: 5rem;
+}
+
+.jersey{
+    position: relative;
+    width: 250px;
+}
+
+.light{
+    position: absolute;
+    transform: -100 -100;
+}
+
 /* player page */
 
 #player{
